@@ -20,6 +20,16 @@ public class HelloWorldUnitTest {
     public void test3() {
         String result = new HelloWorld().getWords(5);
         assertThat(result, equalTo("five"));
+        
+    @Test
+        public void test4() {
+        String result = new HelloWorld().getWords(6);
+        assertThat(result, equalTo("six"));
+        
+        @Test
+        public void test5() {
+        String result = new HelloWorld().getWords(7);
+        assertThat(result, equalTo("six"));
     }
 
 }
